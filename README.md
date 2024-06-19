@@ -1,6 +1,6 @@
-# Personal Portfolio ⚡
+# Personal Portfolio
 
->My portfolio!
+>My portfolio as A Recent Graduate!
 
 > https://YashSerai.github.io
 
