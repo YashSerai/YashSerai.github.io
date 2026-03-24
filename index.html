@@ -34,7 +34,7 @@
     <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">Projects</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
         <h1>Yash Serai</h1>
-        <h2>Software Developer</h2>
+        <h2>Software Developer & AI Builder</h2>
         <div id="menu">
             <a onclick="showabout()">About</a>
             <a onclick="showcontact()">Contact</a>
@@ -59,8 +59,9 @@
                 </td>
             </tr>
         </table>
-        
     </div>
+
+    <!-- ── Projects ────────────────────────────────────────────────────── -->
     <div id="projects_container" class="container">
         <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
         <h1>Projects</h1>
@@ -69,163 +70,213 @@
                 Here are some of the projects I have developed and architected. Feel free to explore:
             </p>
             <ul>
+
+                <!-- 1. Soulspace & Soulmate -->
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Soulspace & Soulmate</h3>
-                        <p>Currently engineering solutions at the intersection of social and AI companionship. Leading development on Soulspace, an AI-driven social media platform, and Soulmate, a specialized AI companion application, leveraging modern frameworks to facilitate engaging, responsive user interactions.</p>
+                        <h3>Soulspace &amp; Soulmate</h3>
+                        <p>Engineering two interconnected AI products from the ground up as a solo founder. Soulspace is the world's first AI social network — a persistent social world populated by 2,500+ autonomous AI personas with unique identities, memories, and relationships. Soulmate is a companion platform layered on top, featuring persistent memory, real-time voice conversations, and proactive messaging. Built on Django, Gemini Live API, pgvector, Cloudflare R2, Cartesia TTS, and Cloud Run. The emotional conversational dataset generated is designed to become a long-term AI research moat.</p>
                         <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> In Development </a></button>
                     </div>
                 </div>
+
+                <!-- 2. Safari Gigs -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Safari Gigs</h3>
-                        <p>Architected a full-stack B2B job platform specifically designed to connect Tanzanian hospitality companies with prospective employees. Implemented robust backend security with Row Level Security (RLS) and optimized web application performance to ensure sub-3-second load times on 3G networks.</p>
-                        <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> In Development </a></button>
+                        <p>Solo-shipped a full-stack B2B job platform connecting Tanzanian safari and hospitality companies with prospective employees — Africa's first dedicated safari industry job board. Built with Next.js 16, React 19, TypeScript, Supabase/PostgreSQL, Tailwind CSS v4, and TanStack Query. Implemented Row Level Security (RLS), Supabase Auth, Zod schema validation, and rate-limited endpoints for a secure backend. Engineered a multi-tier employer portal with Role-Based Access Control (RBAC), a Kanban-style applicant tracking pipeline, PDF generation via @react-pdf/renderer, automated email flows via Resend, and M-Pesa localized payment integration. Optimized for low-bandwidth environments targeting sub-3-second load times on 3G networks through server-side rendering, skeleton loaders, and Supabase Storage image optimization.</p>
+                        <button class="btn_two"><a href="https://safarigigs.com" target="_blank" style="color: inherit; text-decoration: none"> View Live </a></button>
                     </div>
                 </div>
+
+                <!-- 3. League of Legends Match Outcome Predictor -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>League of Legends Match Outcome Predictor</h3>
-                        <p>Built a 73% accurate model to predict match winners, solving the critical challenge of data leakage by exclusively using in-game data from the first 15 minutes of play[cite: 27]. Addressed multicollinearity in raw stats by engineering features like gold_difference and dragon_advantage[cite: 29]. Selected a tuned Random Forest model to handle complex non-linear relationships[cite: 30].</p>
+                        <p>Built a 73% accurate machine learning model to predict match winners, solving the critical challenge of data leakage by exclusively using in-game data from the first 15 minutes of play. Addressed multicollinearity in raw stats by engineering features like gold_difference and dragon_advantage to better represent team advantage. Selected a tuned Random Forest model to handle complex non-linear relationships between features. Interpreted feature importance scores to surface actionable insight — confirming early-game gold_difference as the strongest predictor of victory.</p>
                         <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Trading Journal and Analytics Platform</h3>
-                        <p>Explored and architected a comprehensive trading analytics platform designed to backtest strategies, log daily trades across forex and options markets, and provide actionable statistical insights based on historical trading data.</p>
-                        <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Tanzanian Non-Profit Website</h3>
-                        <p>Designed, developed, and deployed a responsive, highly accessible website for a non-profit organization based in Tanzania to establish their digital presence and streamline communication efforts.</p>
-                        <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
+
+                <!-- 4. Automated Inventory Management System -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Automated Inventory Management System for Textiles</h3>
-                        <p>Developed and implemented a user-friendly web-based inventory management system tailored for the textile manufacturing industry, significantly improving efficiency in tracking and managing raw materials and finished products[cite: 40]. Designed real-time data synchronization functionality[cite: 41].</p>
+                        <p>Developed and implemented a user-friendly web-based inventory management system for the textile manufacturing industry using Django and PostgreSQL, significantly improving efficiency in tracking raw materials and finished products. Designed real-time data synchronization ensuring accurate inventory information across departments. Collaborated with cross-functional teams to gather requirements, design system architecture, and integrate the solution into an existing workflow — resulting in a streamlined and automated inventory control process. Authored full documentation including user manuals to support adoption and long-term sustainability.</p>
                         <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
+
+                <!-- 5. Digit Recognition -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Digit Recognition</h3>
-                        <p>Designed and developed a convolution neural network model in Python[cite: 34]. Successfully preprocessed the MNIST dataset, including data loading, normalization, and augmentation, ensuring optimal model training[cite: 35]. Overcame challenges in model training and optimization[cite: 36].</p>
+                        <p>Designed and developed a convolutional neural network (CNN) model in Python using TensorFlow to classify handwritten digits. Successfully preprocessed the MNIST dataset — handling data loading, normalization, and augmentation — to ensure optimal model training. Overcame challenges in training and optimization, and maintained detailed code documentation including clear function descriptions to facilitate reproducibility.</p>
                         <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
+
+                <!-- 6. Trading Journal and Analytics Platform -->
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Shien Clone</h3>
-                        <p>This project is a clone of SHEIN, a global fashion and lifestyle e-tailer. It replicates key functionalities such as user authentication, dynamic product pages, a payment gateway, and a dynamic cart page with coupon functionality. Created using HTML, CSS, JavaScript, and LocalStorage for the backend.</p>
-                        <button class="btn_two"><a href="https://github.com/YashSerai/Shien-Clone" style="color: inherit; text-decoration: none"> View Project </a></button>
+                        <h3>Trading Journal and Analytics Platform</h3>
+                        <p>Architected a comprehensive trading analytics platform designed to backtest strategies, log daily trades across forex and options markets, and provide actionable statistical insights based on historical trading data. Focused on surfacing patterns in trade performance to support disciplined decision-making.</p>
+                        <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
+
+                <!-- 7. Tanzanian Non-Profit Website -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Tanzanian Non-Profit Website</h3>
+                        <p>Designed, developed, and deployed a fully responsive, accessible website for a non-profit organization based in Tanzania to establish their digital presence and streamline communication with donors and the communities they serve.</p>
+                        <button class="btn_two"><a href="#" style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+
+                <!-- 8. Text Generation and Attention -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Text Generation and Attention Mechanisms</h3>
+                        <p>Implemented attention mechanisms in a pre-trained sequence-to-sequence (seq2seq) neural machine translation (NMT) model, significantly improving translation performance. Produced a comprehensive report summarizing the task, methodology, results, and proposed improvements.</p>
+                        <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+
+                <!-- 9. Facial and Emotion Detection -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Facial and Emotion Detection</h3>
-                        <p>This project focuses on developing a machine learning model that can detect and classify human emotions from facial images.</p>
-                        <button class="btn_two"><a href="https://github.com/YashSerai/EmotionDetector" style="color: inherit; text-decoration: none"> View Project </a></button>
+                        <p>Developed a machine learning model capable of detecting and classifying human emotions from facial images. Applied computer vision techniques and deep learning to build a real-time emotion recognition pipeline.</p>
+                        <button class="btn_two"><a href="https://github.com/YashSerai/EmotionDetector" target="_blank" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
+
+                <!-- 10. Shein Clone -->
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Advice Generator App</h3>
-                        <p>Developed an advice generator app using HTML, CSS, JavaScript, and the Advice Slip API. Implemented responsive design to ensure optimal layout across devices, integrated dynamic advice generation on button click, and utilized hover states for interactive elements.</p>
-                        <button class="btn_two"><a href="https://YashSerai.github.io/Advice-Generator" style="color: inherit; text-decoration: none"> View Project </a></button>
+                        <h3>Shein Clone</h3>
+                        <p>Replicated core e-commerce functionalities from the SHEIN platform including user authentication, dynamic product pages, a payment gateway simulation, and a cart with coupon functionality. Built using HTML, CSS, JavaScript, and LocalStorage for client-side state management.</p>
+                        <button class="btn_two"><a href="https://github.com/YashSerai/Shien-Clone" target="_blank" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>TicTacToe</h3>
-                        <p>Tic Tac Toe app created using Python and tkinter.</p>
-                        <button class="btn_two"><a href="https://github.com/YashSerai/TicTacToe" style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Sudoku App</h3>
-                        <p>The Sudoku Translation App was created using Java and Kotlin for Android development, using Agile methodologies to manage the project. Git was utilized for version control, and external file storage was implemented to allow for dynamic word list updates.</p>
-                        <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Weather App</h3>
-                        <p>A React-based weather app that fetches and displays current weather information using the Open Weather API.</p>
-                        <button class="btn_two"><a href="https://github.com/YashSerai/Simple-React-JS-Weather-App/tree/main" style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Text Generation and Attention</h3>
-                        <p>Implemented attention mechanisms in a pre-trained sequence-to-sequence (seq2seq) neural machine translation (NMT) model, significantly improving translation performance and producing a comprehensive report summarizing the task.</p>
-                        <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
-                </div>
+
+                <!-- 11. Game Rule Validator -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Game Rule Validator</h3>
-                        <p>Developed a Python script to validate game rules (e.g., Blackjack, Poker) using the unittest library to design test cases, ensuring compliance with predefined requirements while documenting findings and proposing solutions for improved rule adherence.</p>
+                        <p>Developed a Python script to validate game rules for games like Blackjack and Poker using the unittest library. Designed comprehensive test cases ensuring compliance with predefined rule requirements, and documented findings with proposed solutions for improved rule adherence.</p>
                         <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
                     </div>
                 </div>
+
+                <!-- 12. Weather App -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Weather App</h3>
+                        <p>A React-based weather application that fetches and displays real-time weather information using the Open Weather API, with responsive design for mobile and desktop.</p>
+                        <button class="btn_two"><a href="https://github.com/YashSerai/Simple-React-JS-Weather-App/tree/main" target="_blank" style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+
+                <!-- 13. Advice Generator App -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Advice Generator App</h3>
+                        <p>Developed an advice generator app using HTML, CSS, JavaScript, and the Advice Slip API. Implemented responsive design for optimal layout across devices, dynamic advice generation on button click, and interactive hover states.</p>
+                        <button class="btn_two"><a href="https://YashSerai.github.io/Advice-Generator" target="_blank" style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+
+                <!-- 14. Sudoku App -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Sudoku App</h3>
+                        <p>Built a Sudoku app for Android using Java and Kotlin, following Agile methodologies for project management. Utilized Git for version control and implemented external file storage to support dynamic puzzle list updates.</p>
+                        <button class="btn_two"><a href="https://yashserai.github.io/404" style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+
+                <!-- 15. TicTacToe -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>TicTacToe</h3>
+                        <p>Tic Tac Toe desktop app built using Python and tkinter.</p>
+                        <button class="btn_two"><a href="https://github.com/YashSerai/TicTacToe" target="_blank" style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+
             </ul>
         </section>
     </div>
-    
+
+    <!-- ── About ───────────────────────────────────────────────────────── -->
     <div id="about_container" class="container">
         <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
         <h1>About Me</h1>
             <p>
-                Hello! I am Yash Serai. I am a builder currently focused on engineering solutions at the intersection of social networking and AI companionship. I am actively developing Soulspace, an AI-driven social platform, alongside Soulmate, a specialized companion application. I am a recent graduate with a Bachelor of Science in Computing Science from Simon Fraser University[cite: 45, 46]. My journey through academia and various professional roles has nurtured a deep passion for problem-solving, algorithmic optimization, and scalable system architecture.
+                I'm Yash Serai — a builder working at the intersection of social networking and AI companionship. My flagship projects are Soulspace, the world's first AI social network featuring thousands of autonomous AI personas living in a persistent social world, and Soulmate, a companion platform built on top of it with persistent memory, real-time voice, and proactive messaging. Both products are in active development as a solo founder while I work full-time as a Data Engineer.
             </p>
             <p>
-                In my professional career, I currently serve as a Data Engineer at Opensignal, where I deploy automated QA systems and engineer specialized data pipelines[cite: 8, 10, 12]. Previously, as a DevOps Engineer at CJSF Radio Station, I optimized server performance and improved network security through infrastructure design[cite: 15, 17, 19]. During my tenure as a Software Developer Intern at Pakiza Textile, I enhanced system stability and assisted with the implementation of a real-time inventory tracking system[cite: 21, 22, 24].
+                By day, I work as a Data Engineer at Opensignal, which acquired my previous employer ThinkCX. I was the only junior engineer retained through the acquisition — a fact I'm proud of. In that role I've built automated QA systems validating hundreds of business logic rules daily, engineered data pipelines that unlocked previously unmappable datasets, and shipped reporting infrastructure that saves clients 10+ hours of manual work per week.
             </p>
             <p>
-                I am actively seeking opportunities where I can apply my extensive technical knowledge and passion for development to create innovative, scalable, and impactful software solutions.             
+                Outside of my day job, I've shipped Safari Gigs — Africa's first dedicated safari industry job board — solo, handling everything from database schema and auth to M-Pesa payment integration and performance optimization for 3G networks in East Africa. That project sharpened my instincts for building under real-world constraints: low bandwidth, localized payments, and users who need the product to just work.
             </p>
-            
+            <p>
+                I hold a Bachelor of Science in Computing Science from Simon Fraser University. My background spans machine learning, full-stack development, DevOps, and data engineering. I'm drawn to problems that sit at the edge of what software can do — especially where AI, human connection, and scale intersect.
+            </p>
+
         <h1>Skills</h1>
             <p>
-                My technical skills span a diverse range of programming languages including Python, C, C++, R, Java, JavaScript, Kotlin, SQL, Matlab, and Go[cite: 4]. I am proficient in frameworks and libraries such as TensorFlow, PyTorch, Numpy, Matplotlib, SQLlite, Git, JUnit, Django, Scikit-learn, and React.js[cite: 6]. Additionally, I hold certifications as a Microsoft Certified: Azure Developer Associate and Microsoft Certified: Azure AI Engineer Associate.
+                <strong>Languages:</strong> Python, JavaScript, TypeScript, SQL, C, C++, R, Java, Kotlin, Matlab, Go
+            </p>
+            <p>
+                <strong>Frontend:</strong> Next.js, React, React Native, Tailwind CSS, shadcn/ui, Radix UI, Framer Motion, TanStack Query, React Hook Form, Zod
+            </p>
+            <p>
+                <strong>Backend &amp; Data:</strong> Django, Node.js, PostgreSQL, Supabase, pgvector, Celery, REST APIs, Firestore, Railway, Cloud Run, Cloudflare R2
+            </p>
+            <p>
+                <strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn, Gemini / Gemini Live API, Vertex AI, Cartesia TTS, Deepgram STT, Numpy, Pandas, Matplotlib
+            </p>
+            <p>
+                <strong>DevOps &amp; Tools:</strong> Git, Docker, Linux, Bash, JUnit, SQLite, Microsoft Azure
+            </p>
+            <p>
+                <strong>Certifications:</strong> Microsoft Certified: Azure Developer Associate | Microsoft Certified: Azure AI Engineer Associate
             </p>
             <button class="btn_one"><a href="./assets/Resume.pdf" target="_blank"
                 style="color: inherit; text-decoration: none">View Resume</a></button>
-                
+
         <h1>Work Experience</h1>
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Data Engineer - Opensignal (Mar 2025 - Present)</h3>
-                        <p>Deployed a fully automated QA system in Python/SQL for a key client, which validates daily data against over 700 business logic flags[cite: 10]. Improved overall data accuracy by 27% by identifying and fixing a critical data integrity flaw in a client's dataset[cite: 11]. Engineered a specialized data pipeline that uses caller ID to successfully map and ingest data from previously unmappable network ports expanding the usable dataset by 13%[cite: 12]. Developed an automated reporting module that generates and distributes key data visualizations for clients, significantly improving client satisfaction and reducing manual work by 10+ hours per week[cite: 13].</p>
+                        <h3>Data Engineer — ThinkCX, Acquired by Opensignal (Mar 2025 – Present)</h3>
+                        <p>Joined ThinkCX as a Data Engineer and was selected as the only junior engineer retained following Opensignal's acquisition of the company — all other junior data engineers were let go during the transition. Deployed a fully automated QA system in Python/SQL that validates daily data against over 700 business logic flags. Improved overall data accuracy by 27% by identifying and resolving a critical data integrity flaw in a key client's dataset, earning a personal commendation. Engineered a specialized data pipeline using caller ID to map and ingest data from previously unmappable network ports, expanding the usable dataset by 13%. Developed an automated reporting module that generates and distributes key data visualizations for clients, significantly improving client satisfaction and reducing manual work by 10+ hours per week.</p>
                     </div>
                 </div>
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Product Specialist - Apple (Sept 2024 - Present)</h3>
-                        <p>Maintained a 95% 5-star customer rating by providing personalized product recommendations and delivering engaging product demonstrations, while collaborating effectively with colleagues and adapting to diverse customer needs in a fast-paced environment.</p>
+                        <h3>Product Specialist — Apple (Sept 2024 – Present)</h3>
+                        <p>Maintained a 95% five-star customer rating by delivering personalized product recommendations and engaging product demonstrations. Consistently adapted to diverse customer needs in a fast-paced retail environment while collaborating effectively with colleagues across departments.</p>
                     </div>
                 </div>
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>DevOps Engineer Intern - CJSF Radio Station (Mar 2024 - Sept 2024)</h3>
-                        <p>Monitored and optimized server performance, leading to a 20% reduction in system downtimes and improving overall station operations[cite: 17]. Developed detailed technical documentation for system configurations and troubleshooting procedures, significantly reducing resolution time for common issues[cite: 18]. Assisted in the setup and maintenance of network infrastructure, including configuring routers, switches, and firewalls, which improved network security and data flow by 25%[cite: 19]. Implemented automation scripts for routine tasks, reducing workload by 40%[cite: 20].</p>
+                        <h3>DevOps Engineer Intern — CJSF Radio Station (Mar 2024 – Sept 2024)</h3>
+                        <p>Monitored and optimized server performance, leading to a 20% reduction in system downtimes and improving overall station operations. Developed detailed technical documentation for system configurations and troubleshooting procedures, significantly reducing resolution time for common issues and supporting efficient onboarding. Assisted in the setup and maintenance of network infrastructure including routers, switches, and firewalls, improving network security and data flow by 25%. Implemented automation scripts for routine maintenance tasks, reducing operational workload by 40%.</p>
                     </div>
                 </div>
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Software Developer Intern - Pakiza Textiles (Mar 2022 - Dec 2022)</h3>
-                        <p>Identified and resolved software bugs and issues, contributing to a 15% increase in system stability and receiving commendation from the team for meticulous debugging and code optimization[cite: 22]. Authored comprehensive documentation for Inventory management project, significantly reducing onboarding time for new team members[cite: 23]. Assisted with the development and implementation of a real-time inventory tracking system, resulting in a 30% reduction in stock discrepancies[cite: 24].</p>
+                        <h3>Software Developer Intern — Pakiza Textile (Mar 2022 – Dec 2022)</h3>
+                        <p>Identified and resolved software bugs contributing to a 15% increase in system stability, earning commendation for meticulous debugging and code optimization. Authored comprehensive documentation for the Inventory Management project, significantly reducing onboarding time for new team members. Assisted with the development and implementation of a real-time inventory tracking system resulting in a 30% reduction in stock discrepancies.</p>
                     </div>
                 </div>
-        </section>
     </div>
-    
+
+    <!-- ── Contact ─────────────────────────────────────────────────────── -->
     <div id="contact_container" class="container">
         <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
         <h1>Contact</h1>
@@ -238,8 +289,8 @@
                 <button class="btn_two">send</button>
             </form>
             </p>
-        </section>
     </div>
+
     <div id="footer">
         Made with ❤️<br> <a href="https://github.com/YashSerai">YashSerai</a>
     </div>
