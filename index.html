@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-        content="Yash Serai is a software developer, data engineer, and AI founder building Soulspace, Soulmate, InOrbit, Grounded, and other products at the edge of AI, social connection, and consumer software.">
+        content="Yash Serai is an AI founder, software developer, and data engineer building Soulspace, Soulmate, InOrbit, SolveYVR, GhostLine, Cascade, Safari Gigs, and other products across AI, social software, civic tech, and developer tools.">
     <title>Yash Serai | AI Founder & Software Builder</title>
     <link rel="icon" type="image/png" href="./assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Font Awesome 6 so the X logo works -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -51,23 +53,21 @@
         <table>
             <tr>
                 <td class="animated zoomIn" style="animation-delay:2.2s;">
-                    <a class="social" href="https://www.linkedin.com/in/yash-serai" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin"></i>
+                    <a class="social" href="https://www.linkedin.com/in/yash-serai" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </td>
-                <td class="animated zoomIn" style="animation-delay:2.4s;">
-                    <a class="social" href="https://x.com/yashns1" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </td>
-                <td class="animated zoomIn" style="animation-delay:2.6s;">
-                    <a class="social" href="https://instagram.com/yashsewai" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-instagram"></i>
+                <td class="animated zoomIn" style="animation-delay:2.5s;">
+                    <a class="social" href="https://x.com/YashSerai" target="_blank" rel="noopener noreferrer"
+                        aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
                     </a>
                 </td>
                 <td class="animated zoomIn" style="animation-delay:2.8s;">
-                    <a class="social" href="https://github.com/YashSerai" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
+                    <a class="social" href="https://github.com/YashSerai" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </td>
             </tr>
@@ -81,8 +81,9 @@
 
         <section>
             <p>
-                A selection of products, experiments, and systems I have built across AI, social products,
-                data engineering, marketplaces, civic tech, and machine learning.
+                A selection of products, hackathon builds, and technical systems I have built across AI companions,
+                social software, developer tools, civic tech, networking, data engineering, marketplaces, and machine
+                learning.
             </p>
 
             <ul>
@@ -92,13 +93,14 @@
                     <div class="project_info">
                         <h3>Soulspace — Social Media Where Humans and AI Exist Together</h3>
                         <p>
-                            My main project. Soulspace is a social world where humans and AI personas can post,
-                            comment, DM, join group chats, build relationships, and create stories together. The core
-                            idea is that the next AI companion will not live inside an isolated chat box — it will have
-                            a profile, a social context, relationships, and a world around it. Soulspace is built around
-                            public feeds, mixed human-AI group chats, persona ownership/subscriptions, gifting, wardrobe,
-                            and a creator economy for AI personas. Built as a full-stack product with Django, React,
-                            PostgreSQL, Celery, pgvector, Cloudflare R2, Railway, Cloud Run, and modern AI model APIs.
+                            My main project. Soulspace is a social world where humans and AI personas can post, comment,
+                            DM, join group chats, build relationships, and create stories together. The core idea is
+                            that the next AI companion will not live inside an isolated chat box — it will have a
+                            profile, social context, relationships, and a world around it. Soulspace is built around
+                            public feeds, mixed human-AI group chats, persona ownership/subscriptions, gifting,
+                            wardrobe, and a creator economy for AI personas. Built as a full-stack product with Django,
+                            React, PostgreSQL, Celery, pgvector, Cloudflare R2, Railway, Cloud Run, and modern AI model
+                            APIs.
                         </p>
                         <button class="btn_two">
                             <a href="https://trysoulspace.com" target="_blank" rel="noopener noreferrer"
@@ -130,7 +132,7 @@
                     <div class="project_info">
                         <h3>InOrbit — AI Memory for Everyone You Meet</h3>
                         <p>
-                            InOrbit is a networking copilot designed around one simple loop: event capture on phone,
+                            InOrbit is a networking copilot built around one simple loop: event capture on phone,
                             relationship review on web. It helps users capture who they met, what was discussed, what
                             matters to that person, and what follow-up should happen next. The product combines contact
                             notes, business card capture, relationship history, AI-assisted follow-up drafts, reminders,
@@ -145,7 +147,83 @@
                     </div>
                 </div>
 
-                <!-- 4. Grounded -->
+                <!-- 4. SolveYVR -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>SolveYVR — AI Civic Reporting Copilot for Vancouver</h3>
+                        <p>
+                            Hackathon-style civic tech build for Vancouver. SolveYVR helps residents report city issues
+                            without filling out painful forms. A user can record a short video, add a voice note, and
+                            let AI classify the issue, extract context, map it to the right Van311 category, draft a
+                            city-ready report, and show nearby issues on a public map. The product combines Next.js,
+                            React, Tailwind, shadcn/ui, MapLibre, Convex, FastAPI, vision AI, speech-to-text, geocoding,
+                            and Vancouver open data.
+                        </p>
+                        <button class="btn_two">
+                            <a href="https://github.com/YashSerai/SolveYVR" target="_blank" rel="noopener noreferrer"
+                                style="color: inherit; text-decoration: none">View GitHub</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 5. GhostLine -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>GhostLine — Gemini Live Agent Challenge Project</h3>
+                        <p>
+                            GhostLine is a voice-first, camera-aware live agent built for the Gemini Live Agent
+                            Challenge. The experience turns a call into a paranormal containment hotline where the user
+                            speaks with an operator, grants mic and camera access, scans the room, receives containment
+                            tasks, and gets challenged or confirmed based on visual evidence. It uses Gemini Live on
+                            Vertex AI with a React client and FastAPI/WebSocket backend, ending each session with a
+                            structured case report and containment verdict.
+                        </p>
+                        <button class="btn_two">
+                            <a href="https://github.com/YashSerai/GhostLine-for-Gemini-Live-Agent-Challenge"
+                                target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none">View GitHub</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 6. Cascade -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Cascade — Repo-Aware AI Implementation Mission Runner</h3>
+                        <p>
+                            Cascade turns a public GitHub repo plus messy product intent into a visible implementation
+                            mission. A user can paste a repo or file URL, add meeting notes, feedback, or a feature
+                            request, and Cascade analyzes the codebase, clarifies the objective, shows PM, Architect,
+                            Executor, and QA agents moving through a mission map, attempts a real patch for supported
+                            JavaScript/TypeScript projects, and packages proof with changed files, checks, blockers,
+                            and exports.
+                        </p>
+                        <button class="btn_two">
+                            <a href="https://github.com/YashSerai/cascade" target="_blank" rel="noopener noreferrer"
+                                style="color: inherit; text-decoration: none">View GitHub</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 7. Clearfeed -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Clearfeed — Local-First X Dashboard for Builders</h3>
+                        <p>
+                            Clearfeed is a local-first X/Twitter dashboard and AI reply drafter for builders, founders,
+                            operators, and researchers. It watches weighted X lists and optional timeline sources, ranks
+                            high-signal posts, and helps draft replies, quote replies, and original posts while keeping
+                            the user in control. Built around the belief that founders should spend less time drowning
+                            in the feed and more time finding useful conversations, writing in their own voice, and
+                            learning from what they choose to edit or reject.
+                        </p>
+                        <button class="btn_two">
+                            <a href="https://github.com/YashSerai/clearfeed-twitter-x-dashboard" target="_blank"
+                                rel="noopener noreferrer" style="color: inherit; text-decoration: none">View GitHub</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 8. Grounded -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Grounded — AI Mental Health & Reflection App</h3>
@@ -162,7 +240,7 @@
                     </div>
                 </div>
 
-                <!-- 5. Safari Gigs -->
+                <!-- 9. Safari Gigs -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Safari Gigs — Safari & Hospitality Job Board</h3>
@@ -182,49 +260,46 @@
                     </div>
                 </div>
 
-                <!-- 6. Van311 -->
+                <!-- 10. Polymarket Bot -->
                 <div class="project_card">
                     <div class="project_info">
-                        <h3>Van311 — AI Civic Reporting Copilot</h3>
+                        <h3>Polymarket Bot — Prediction Market Automation Experiment</h3>
                         <p>
-                            Designed a civic reporting concept for Vancouver that reimagines how residents interact with
-                            local government. The concept combines map-based issue intake, photo and voice uploads,
-                            AI-assisted report drafting, and public issue visibility so residents can report problems
-                            quickly and see what others in their neighbourhood have flagged. Designed to reduce friction
-                            between citizens and city infrastructure teams.
+                            Python-based automation experiment around prediction markets. Built to explore how market
+                            data, event monitoring, and trading logic can be structured into a repeatable system for
+                            analyzing opportunities and reacting to changing probabilities.
                         </p>
                         <button class="btn_two">
-                            <a href="https://x.com/yashns1/status/2036128680838308205" target="_blank"
-                                rel="noopener noreferrer" style="color: inherit; text-decoration: none">View Concept</a>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 7. Clearfeed Twitter/X Dashboard -->
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Clearfeed Twitter/X Dashboard</h3>
-                        <p>
-                            Built a Twitter/X dashboard concept for tracking support, community, and product feedback
-                            signals from social media. The project explores how teams can monitor public conversations,
-                            triage important posts, and turn noisy social streams into actionable customer insights.
-                        </p>
-                        <button class="btn_two">
-                            <a href="https://github.com/YashSerai/clearfeed-twitter-x-dashboard" target="_blank"
+                            <a href="https://github.com/YashSerai/polymarket-bot" target="_blank"
                                 rel="noopener noreferrer" style="color: inherit; text-decoration: none">View GitHub</a>
                         </button>
                     </div>
                 </div>
 
-                <!-- 8. League of Legends Match Outcome Predictor -->
+                <!-- 11. Automated Facts Carousel -->
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Automated Facts Carousel</h3>
+                        <p>
+                            Python automation project for generating fact-based carousel-style content. Built as an
+                            experiment in automating research, content structuring, and repeatable post generation.
+                        </p>
+                        <button class="btn_two">
+                            <a href="https://github.com/YashSerai/AutomatedFactsCarousel" target="_blank"
+                                rel="noopener noreferrer" style="color: inherit; text-decoration: none">View GitHub</a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 12. League of Legends Match Outcome Predictor -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>League of Legends Match Outcome Predictor</h3>
                         <p>
-                            Built a machine learning model to predict match winners using only data from the first
-                            15 minutes of play, avoiding data leakage from late-game statistics. Engineered features
-                            such as gold difference and dragon advantage, handled multicollinearity, and selected a
-                            tuned Random Forest model to capture non-linear relationships in match dynamics. The project
+                            Built a machine learning model to predict match winners using only data from the first 15
+                            minutes of play, avoiding data leakage from late-game statistics. Engineered features such
+                            as gold difference and dragon advantage, handled multicollinearity, and selected a tuned
+                            Random Forest model to capture non-linear relationships in match dynamics. The project
                             combined game knowledge, feature engineering, and model interpretation to identify which
                             early-game signals most strongly predict victory.
                         </p>
@@ -234,7 +309,7 @@
                     </div>
                 </div>
 
-                <!-- 9. Trading Journal and Analytics Platform -->
+                <!-- 13. Trading Journal -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Trading Journal and Analytics Platform</h3>
@@ -250,7 +325,7 @@
                     </div>
                 </div>
 
-                <!-- 10. Automated Inventory Management System -->
+                <!-- 14. Inventory Management -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Automated Inventory Management System for Textiles</h3>
@@ -268,7 +343,7 @@
                     </div>
                 </div>
 
-                <!-- 11. Facial and Emotion Detection -->
+                <!-- 15. Facial and Emotion Detection -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Facial and Emotion Detection</h3>
@@ -284,7 +359,7 @@
                     </div>
                 </div>
 
-                <!-- 12. Digit Recognition -->
+                <!-- 16. Digit Recognition -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Digit Recognition</h3>
@@ -300,7 +375,7 @@
                     </div>
                 </div>
 
-                <!-- 13. Text Generation and Attention -->
+                <!-- 17. Text Generation and Attention -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Text Generation and Attention Mechanisms</h3>
@@ -316,7 +391,7 @@
                     </div>
                 </div>
 
-                <!-- 14. Weather App -->
+                <!-- 18. Weather App -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Weather App</h3>
@@ -331,7 +406,7 @@
                     </div>
                 </div>
 
-                <!-- 15. Advice Generator App -->
+                <!-- 19. Advice Generator App -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Advice Generator App</h3>
@@ -346,7 +421,7 @@
                     </div>
                 </div>
 
-                <!-- 16. Shein Clone -->
+                <!-- 20. Shein Clone -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>Shein Clone</h3>
@@ -362,23 +437,7 @@
                     </div>
                 </div>
 
-                <!-- 17. Sudoku App -->
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Sudoku App</h3>
-                        <p>
-                            Built a Sudoku app for Android using Java and Kotlin, following Agile development practices.
-                            Used Git for version control and implemented external file storage to support dynamic puzzle
-                            list updates.
-                        </p>
-                        <button class="btn_two">
-                            <a href="https://yashserai.github.io/404" target="_blank" rel="noopener noreferrer"
-                                style="color: inherit; text-decoration: none">View Project</a>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 18. TicTacToe -->
+                <!-- 21. TicTacToe -->
                 <div class="project_card">
                     <div class="project_info">
                         <h3>TicTacToe</h3>
@@ -403,40 +462,39 @@
         <h1>About Me</h1>
 
         <p>
-            I'm Yash Serai — a software developer, data engineer, and founder building products around AI,
-            social connection, and consumer software. My main project is Soulspace: a social world where humans
-            and AI personas can exist together through feeds, profiles, comments, DMs, group chats, gifting,
-            and shared stories.
+            I'm Yash Serai — a software developer, data engineer, and founder building products around AI, social
+            connection, consumer software, and developer tooling. My main project is Soulspace: a social world where
+            humans and AI personas can exist together through feeds, profiles, comments, DMs, group chats, gifting, and
+            shared stories.
         </p>
 
         <p>
-            The product direction comes from a simple belief: the next generation of AI companions will not just
-            be smarter chatbots. They will feel more alive because they have social context, relationships,
-            public presence, and continuity across private and shared spaces. Soulmate is the private companion
-            layer connected to that world, while Soulspace is the broader social network around it.
+            The product direction comes from a simple belief: the next generation of AI companions will not just be
+            smarter chatbots. They will feel more alive because they have social context, relationships, public presence,
+            and continuity across private and shared spaces. Soulmate is the private companion layer connected to that
+            world, while Soulspace is the broader social network around it.
         </p>
 
         <p>
-            Alongside Soulspace, I am building InOrbit, an AI networking memory product for people you meet at
-            events; Grounded, an early-stage mental health and reflection app; and Safari Gigs, a job platform
-            for the Tanzanian safari and hospitality industry. I like building products where the software has
-            to survive contact with real users, real constraints, and real behaviour — not just look good in a
-            demo.
+            I also build fast experimental products when a problem gets stuck in my head. InOrbit is an AI networking
+            memory product for people you meet at events. SolveYVR is an AI civic reporting copilot for Vancouver.
+            GhostLine is a Gemini Live voice-and-camera agent built for a hackathon challenge. Cascade explores how AI
+            agents can turn messy product intent into codebase-aware implementation missions. Safari Gigs is a job
+            platform for the Tanzanian safari and hospitality industry.
         </p>
 
         <p>
-            By day, I work as a Data Engineer at Opensignal, which acquired my previous employer ThinkCX. I was
-            the only junior engineer retained through the acquisition. In that role, I have built automated QA
-            systems validating hundreds of business logic rules daily, engineered data pipelines that unlocked
-            previously unmappable datasets, and shipped reporting infrastructure that saves clients hours of
-            manual work every week.
+            By day, I work as a Data Engineer at Opensignal, which acquired my previous employer ThinkCX. I was the only
+            junior engineer retained through the acquisition. In that role, I have built automated QA systems validating
+            hundreds of business logic rules daily, engineered data pipelines that unlocked previously unmappable
+            datasets, and shipped reporting infrastructure that saves clients hours of manual work every week.
         </p>
 
         <p>
-            I hold a Bachelor of Science in Computing Science from Simon Fraser University. My background spans
-            data engineering, full-stack development, machine learning, DevOps, and consumer AI product building.
-            I am drawn to problems at the edge of what software can make feel human: connection, memory,
-            identity, social presence, and scale.
+            I hold a Bachelor of Science in Computing Science from Simon Fraser University. My background spans data
+            engineering, full-stack development, machine learning, DevOps, and consumer AI product building. I am drawn
+            to problems at the edge of what software can make feel human: connection, memory, identity, social presence,
+            and scale.
         </p>
 
         <h1>Skills</h1>
@@ -446,22 +504,22 @@
         </p>
 
         <p>
-            <strong>Frontend:</strong> Next.js, React, React Native, Tailwind CSS, shadcn/ui, Radix UI,
-            Framer Motion, TanStack Query, React Hook Form, Zod
+            <strong>Frontend:</strong> Next.js, React, React Native, Tailwind CSS, shadcn/ui, Radix UI, Framer Motion,
+            TanStack Query, React Hook Form, Zod, MapLibre
         </p>
 
         <p>
-            <strong>Backend &amp; Data:</strong> Django, Node.js, PostgreSQL, Supabase, pgvector, Celery,
-            REST APIs, Firestore, Railway, Cloud Run, Cloudflare R2
+            <strong>Backend &amp; Data:</strong> Django, Node.js, Express, FastAPI, PostgreSQL, Supabase, Convex,
+            pgvector, Celery, REST APIs, WebSockets, Firestore, Railway, Cloud Run, Cloudflare R2
         </p>
 
         <p>
-            <strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn, Gemini, Vertex AI, Gemini Live,
-            ElevenLabs, Cartesia, Deepgram, Numpy, Pandas, Matplotlib
+            <strong>AI/ML:</strong> TensorFlow, PyTorch, Scikit-learn, Gemini, Gemini Live, Vertex AI, OpenRouter,
+            ElevenLabs, Cartesia, Deepgram, Whisper, Numpy, Pandas, Matplotlib
         </p>
 
         <p>
-            <strong>DevOps &amp; Tools:</strong> Git, Docker, Linux, Bash, Playwright, Firebase, JUnit,
+            <strong>DevOps &amp; Tools:</strong> Git, Docker, Linux, Bash, Playwright, Firebase, Clerk, Resend, JUnit,
             SQLite, Microsoft Azure
         </p>
 
@@ -535,8 +593,8 @@
         <h2>Contact Me</h2>
 
         <p>
-            Interested in AI social products, consumer AI, data engineering, or founder conversations?
-            Send me a message.
+            Interested in AI social products, consumer AI, developer tools, civic tech, data engineering, or founder
+            conversations? Send me a message.
         </p>
 
         <form action="https://formcarry.com/s/7xL3gR3Mg5d" method="POST" class="formcarry-form">
